@@ -6,6 +6,17 @@ body {
 
 input {
   max-width: 500px;
+  margin: 10px 0;
+  border-radius: 4px;
+  min-height: 40px;
+  padding: 0 10px;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+input:active,
+input:focus {
+  outline: 5px solid rgba(241, 90, 34, 0.8);
 }
 
 .gray {
@@ -40,11 +51,6 @@ input {
   border-color: buttonface;
   cursor: pointer;
   max-width: 250px;
-}
-
-input {
-  padding: 0.1em;
-  margin-bottom: 0.2em;
 }
 
 .error-input {
