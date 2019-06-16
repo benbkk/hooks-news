@@ -44,7 +44,6 @@ function Login(props) {
         {!login && (
           <input 
             type="text"
-            className={errors.email && 'error-input'}
             value={values.name}
             placeholder="Your name"
             autoComplete="off"
@@ -54,6 +53,7 @@ function Login(props) {
         )}
         <input
           type="email"
+          className={errors.email && 'error-input'}
           placeholder="Your email"
           value={values.email}
           autoComplete="off"
