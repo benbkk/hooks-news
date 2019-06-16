@@ -15,8 +15,8 @@ input {
 }
 
 input:active,
-input:focus {
-  outline: 5px solid rgba(241, 90, 34, 0.8);
+input:focus:not(.input-error) {
+  outline: none;
 }
 
 .gray {
@@ -54,7 +54,7 @@ input:focus {
 }
 
 .error-input {
-  border: 2px solid red;
+  outline: 5px solid rgba(241, 90, 34, 0.8);
   border-radius: 4px;
 }
 
@@ -63,6 +63,7 @@ input:focus {
   padding: 0;
   color: red;
   font-style: bold;
+  font-size: 12px;
 }
 
 .header {

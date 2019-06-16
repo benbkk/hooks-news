@@ -25,8 +25,7 @@ function useFormValidation(initialState, validate, authenticate) {
     }))
   }
 
-  function handleBlur(event) {
-    console.log(event.target)
+  function handleBlur() {
     const validationErrors = validate(values)
     setErrors(validationErrors)
   }
@@ -36,7 +35,6 @@ function useFormValidation(initialState, validate, authenticate) {
     const validationErrors = validate(values)
     setErrors(validationErrors)
     setSubmitting(true)
-    console.log({values})
   }
 
   return {
